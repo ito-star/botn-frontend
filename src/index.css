@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: calc((100vh * 16) / (763));
+  --background-color: #eff2fd;
+  --theme-color: #0773ff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-color);
+  overflow-x: hidden;
+  /* font-size: calc((100vh / 763) * 16); */
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: rgb(180, 180, 180);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(180, 180, 180);
+}
+
+::placeholder {
+  color: rgb(180, 180, 180);
+}

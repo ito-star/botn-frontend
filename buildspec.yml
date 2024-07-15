@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # install Node 16
+      - echo Installing Node 12..
+      - curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+      - apt install -y nodejs
+      # install Yarn
+      - echo Installing Yarn...
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+      - apt install --no-install-recommends yarn
+  pre_build:
+    commands:
+      # install dependencies
+      - echo Installing dependencies...
+      - yarn 
+  build:
+    on-failure: ABORT
+    commands:
+      # - echo Testing...
+      # - yarn test
+      - echo Building...
+      - echo $serverApplicationRootUrl
+      - yarn build
+  post_build:
+    commands:
+      - echo Clearing CloudFront cache...
+      - aws cloudfront create-invalidation --distribution-id=E212RXOVIZJYSC --paths '/*'
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build

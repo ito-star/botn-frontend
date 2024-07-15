@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 20</title>
+    <g id="Main---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form-(All-No-Selected)" transform="translate(-337.000000, -253.000000)" fill-rule="nonzero">
+            <g id="Group-19" transform="translate(30.000000, 85.000000)">
+                <g id="Group-7" transform="translate(10.000000, 53.000000)">
+                    <g id="Group-20" transform="translate(297.000000, 115.000000)">
+                        <path d="M10,0 C4.48,0 0,4.48 0,10 C0,15.52 4.48,20 10,20 C15.52,20 20,15.52 20,10 C20,4.48 15.52,0 10,0 Z" id="Path" fill="#1072FF"></path>
+                        <path d="M14,11 L11,11 L11,14 C11,14.55 10.55,15 10,15 C9.45,15 9,14.55 9,14 L9,11 L6,11 C5.45,11 5,10.55 5,10 C5,9.45 5.45,9 6,9 L9,9 L9,6 C9,5.45 9.45,5 10,5 C10.55,5 11,5.45 11,6 L11,9 L14,9 C14.55,9 15,9.45 15,10 C15,10.55 14.55,11 14,11 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
